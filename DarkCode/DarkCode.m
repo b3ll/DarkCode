@@ -13,7 +13,7 @@
 #import "ZKSwizzle.h"
 
 static inline NSAppearance *DarkAppearance() {
-  return [NSAppearance appearanceNamed:@"DarkAppearance"];
+  return [NSAppearance appearanceNamed:NSAppearanceNameDarkAqua];
 }
 
 @implementation DarkCode
