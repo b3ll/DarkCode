@@ -14,6 +14,14 @@ This may probably break in the future, so this plugin is targeting Mojave beta 5
 
 ## How do I DarkCode?
 
+### Xcode Plugin
+
+If you disable SIP (I think this is needed) and AppleMobileFileIntegrity you can load it as an xcplugin by building the DarkDock-xcplugin target (with codesigning enabled) and placing the plugin in:
+
+`~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/`
+
+### SIMBL
+
 Mojave + SIMBL support isn't really a thing right now, I think it's being worked on. I just used [mach_inject](https://github.com/rentzsch/mach_inject) to inject it.
 [MacPlus](https://github.com/w0lfschild/MacPlus) also seems to be a successor that's actively being worked on (and that also uses mach_inject).
 

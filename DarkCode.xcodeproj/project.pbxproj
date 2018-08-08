@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B66A05E211B4D0F001C1C2A /* DarkCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E9616D211A7A7F00348944 /* DarkCode.m */; };
+		0B66A05F211B4D0F001C1C2A /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C26AE211ABFC300EBC74B /* ZKSwizzle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		661C26AF211ABFC300EBC74B /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C26AE211ABFC300EBC74B /* ZKSwizzle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66E9616E211A7A7F00348944 /* DarkCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E9616D211A7A7F00348944 /* DarkCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B66A065211B4D0F001C1C2A /* DarkCode.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkCode.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		661C26AD211ABFC200EBC74B /* ZKSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKSwizzle.h; sourceTree = "<group>"; };
 		661C26AE211ABFC300EBC74B /* ZKSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKSwizzle.m; sourceTree = "<group>"; };
 		66E96163211A7A3400348944 /* DarkCode.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkCode.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +24,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B66A060211B4D0F001C1C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66E96160211A7A3400348944 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				66E96163211A7A3400348944 /* DarkCode.bundle */,
+				0B66A065211B4D0F001C1C2A /* DarkCode.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +73,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B66A05C211B4D0F001C1C2A /* DarkCode-xcplugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B66A062211B4D0F001C1C2A /* Build configuration list for PBXNativeTarget "DarkCode-xcplugin" */;
+			buildPhases = (
+				0B66A05D211B4D0F001C1C2A /* Sources */,
+				0B66A060211B4D0F001C1C2A /* Frameworks */,
+				0B66A061211B4D0F001C1C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DarkCode-xcplugin";
+			productName = DarkCode;
+			productReference = 0B66A065211B4D0F001C1C2A /* DarkCode.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
 		66E96162211A7A3400348944 /* DarkCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66E96169211A7A3400348944 /* Build configuration list for PBXNativeTarget "DarkCode" */;
@@ -106,11 +134,19 @@
 			projectRoot = "";
 			targets = (
 				66E96162211A7A3400348944 /* DarkCode */,
+				0B66A05C211B4D0F001C1C2A /* DarkCode-xcplugin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B66A061211B4D0F001C1C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66E96161211A7A3400348944 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +157,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B66A05D211B4D0F001C1C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B66A05E211B4D0F001C1C2A /* DarkCode.m in Sources */,
+				0B66A05F211B4D0F001C1C2A /* ZKSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66E9615F211A7A3400348944 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +178,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0B66A063211B4D0F001C1C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DarkCode/Info.plist";
+				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Xcode/Shared/Plug-ins/\"";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.adambell.DarkCode;
+				PRODUCT_NAME = DarkCode;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		0B66A064211B4D0F001C1C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DarkCode/Info.plist";
+				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Xcode/Shared/Plug-ins/\"";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.adambell.DarkCode;
+				PRODUCT_NAME = DarkCode;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
 		66E96167211A7A3400348944 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +360,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B66A062211B4D0F001C1C2A /* Build configuration list for PBXNativeTarget "DarkCode-xcplugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B66A063211B4D0F001C1C2A /* Debug */,
+				0B66A064211B4D0F001C1C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		66E9615E211A7A3400348944 /* Build configuration list for PBXProject "DarkCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
