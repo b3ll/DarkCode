@@ -1,6 +1,6 @@
 # DarkCode
 
-A Plugin to Force Xcode to use Dark Mode.
+A Plugin to force Xcode to use Dark Mode.
 
 ![DarkCode Screenshot](/ScreenShot@2x.png?raw=true "DarkCode Screenshot")
 
