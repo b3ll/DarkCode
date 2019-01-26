@@ -1,5 +1,9 @@
 # DarkCode
 
+## Disclaimer
+
+**NOTE**: As of Xcode 10.2, this plugin is no longer necessary and can be deleted. Code will be left up here for future reference though :)
+
 A Plugin to force Xcode to use Dark Mode.
 
 ![DarkCode Screenshot](/ScreenShot@2x.png?raw=true "DarkCode Screenshot")
